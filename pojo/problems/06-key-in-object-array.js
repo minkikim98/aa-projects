@@ -18,15 +18,17 @@ keyInObjectArray(objArray, 'food'); // => false
 keyInObjectArray(objArray, 'animal'); // => false
 
 ***********************************************************************/
+function doesKeyExist(obj, key) {
+  if (obj[key] === undefined) return false;
+  return true;
+}
 
 function keyInObjectArray(objArray, keyString) {
   // your code here
-  let exists = false;
-  objArray.forEach(curr => {
-    // console.log(curr[keyString]);
-    if (curr[keyString] !== undefined) exists = true;
-  });
-  return exists;
+  for (let i = 0; i < objArray.length; i++) {
+    if (doesKeyExist(objArray[i], keyString)) return true;
+  }
+  return false;
 }
 
 // let objArray = [
