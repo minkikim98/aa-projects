@@ -1,5 +1,5 @@
 const Board = require("./board");
-const HumanPlayer = require("./humanPlayer");
+// const HumanPlayer = require("./humanPlayer");
 
 class BattleshipGame {
   constructor(player1, numRows, numCols, numShips) {

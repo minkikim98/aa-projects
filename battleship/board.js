@@ -81,7 +81,7 @@ class Board {
     // TODO: Take in an attack position in the form of an array, [row, col], as
     // a parameter. Update this.grid depending on if the position is an empty
     // space or a damaged ship.
-    console.log(pos);
+    // console.log(pos);
     let [row, col] = pos;
     let index = this.grid[row][col];
     let publicIndex = this.publicGrid[row][col];
